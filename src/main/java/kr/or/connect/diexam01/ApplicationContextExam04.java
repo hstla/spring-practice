@@ -3,13 +3,13 @@ package kr.or.connect.diexam01;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class ApplicationContextExam03 {
-
+public class ApplicationContextExam04 {
   public static void main(String[] args) {
+    ApplicationContext ac = new AnnotationConfigApplicationContext(ApplicationConfig02.class);
 
-    ApplicationContext ac = new AnnotationConfigApplicationContext(ApplicationConfig.class);
-
+    // (Car) -- Car.class로 받으니까 변환해줄 필요는 없다.
     Car car = ac.getBean(Car.class);
     car.run();
   }
+
 }

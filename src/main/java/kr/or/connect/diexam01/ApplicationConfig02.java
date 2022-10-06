@@ -1,20 +1,12 @@
 package kr.or.connect.diexam01;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 //spring 설정 클래스라는 의미를 가지는 어노테이션
-//@Configuration
-public class ApplicationConfig {
-  @Bean
-  public Car car(Engine e) {
-    Car c = new Car();
-    c.setV8(e);
-    return c;
-  }
+@Configuration
+@ComponentScan("kr.or.connect.diexam01")
+public class ApplicationConfig02 {
 
-  @Bean
-  public Engine engine() {
-    return new Engine();
-  }
 }

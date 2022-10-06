@@ -1,5 +1,8 @@
 package kr.or.connect.diexam01;
 
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
 public class UserBean {
 /*
 1) 기본생성자를 가지고 있다.
